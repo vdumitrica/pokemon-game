@@ -22,6 +22,9 @@ class Pokemon:
 
         return f"{pokemon_name} (HP: {pokemon_health}, ATK: {pokemon_attack})"
     
+    def get_name(self) -> str:
+        return self.name
+
     def get_health(self) -> int:
         return self.health
     
@@ -30,12 +33,4 @@ class Pokemon:
     
     def decrease_health(self, attack: int) -> None:
         self.health = self.health - attack
-
-    # def attack(self, opponent: Pokemon) -> None:
-    #     opponent.decrease_health(self.attack)
-
-    
-
-
-
     
